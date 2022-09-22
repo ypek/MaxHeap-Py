@@ -69,35 +69,6 @@ class MaxHeap:
         if maior != index:
             self.__swap(index, maior)
             self.__bubbleDown(maior)
-            
-
-        def entregar(self):
-        if self.is_empty():
-            print('Não há refeições para entregar!')
-        else:
-            print('Refeição entregue!')
-            self.get()
-        
-        def preparar(self):
-        if self.is_empty():
-            print('Não há refeições para preparar!')
-        else:
-            print('Refeição preparada!')
-            self.get()
-        
-        def simulacao(self):
-        if self.is_empty():
-            print('Não há refeições para simular!')
-        else:
-            print('Simulação iniciada!')
-            self.get()
-        
-        def simulacao(self):
-            if self.is_empty():
-                print('Não há refeições para simular!')
-            else:
-                print('Simulação iniciada!')
-                self.get()
 
 ## TESTES ##
 if __name__ == '__main__':     ## teste para que ao importar esse arquivo nao considere esse trecho                   

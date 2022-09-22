@@ -21,6 +21,12 @@ while True:
 
     (3) Mostrar próximo grupo aguardando
 
+    (4) Preparar próxima refeição
+
+    (5) Entregar refeição
+
+    (6) Gerar Simulação
+
     ''')
 
     opcao = int(input('Digite a opção desejada: '))
@@ -42,7 +48,17 @@ while True:
     elif opcao == 3:
         fila.get()
         print('Próximo grupo aguardando: ', fila.peek())
+    elif opcao == 4:
+        fila.preparar()
+        print('Próxima refeição preparada!')
 
+    elif opcao == 5:
+        fila.entregar()
+        print('Refeição entregue!')
+    
+    elif opcao == 6:
+        fila.simulacao()
+        print('Simulação gerada!')
         
     else:
         print('Opção inválida!')
